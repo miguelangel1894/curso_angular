@@ -1,0 +1,38 @@
+<p>binding-ejemplo works!</p>
+
+<p>binding-ejemplo one way!</p>
+<p>{{texto}}</p>
+
+<hr>
+<p>binding-ejemplo to way!</p>
+<p>binding-ejemplo works!</p>
+<p>
+    color:
+    <input [(ngModel)]="color">
+</p>
+<p>
+    fondo:
+    <input [(ngModel)]="colorBg">
+</p>
+<p>
+    contenido:
+    <input [(ngModel)]="contenido">
+</p>
+<div [ngStyle]="{'color':color,'background-color': colorBg,'padding': '5px'}">
+    {{contenido}}
+</div>
+
+<hr>
+
+<p>
+    botón
+    <button [disabled]="habilitar">boton que se deshabilita con property binding</button>
+</p>
+
+<hr>
+
+<p>
+    nombre:
+    <input (input)="onInput($event)" />
+</p>
+<p>{{nombre}}</p>

@@ -1,0 +1,19 @@
+<ul>
+    <li *ngFor = "let ciudad of nombreCiudades">
+        {{ciudad.nombre}}
+        <app-input-output (mensajeHijo)="paraPadre($event)" [ciudad]="ciudad.nombre"></app-input-output>
+        <app-input-output-dos (mensajeHijoDos)="paraPadreDos($event)"></app-input-output-dos>
+        <app-input-output-tres (mensajeHijoTres)="paraPadreTres($event)"></app-input-output-tres>
+    </li>
+</ul>
+<hr>
+<p>datos enviados desde hijo</p>
+<hr>
+{{mensajeEnviado}}
+<hr>
+<hr>
+{{mensajeEnviadoDos}}
+<hr>
+<hr>
+{{mensajeEnviadoTres}}
+<hr>
