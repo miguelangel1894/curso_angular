@@ -14,6 +14,7 @@ export class PadreInputOutputComponent implements OnInit {
   mensajeEnviado: string = ''
   mensajeEnviadoDos: string = ''
   mensajeEnviadoTres: string = ''
+  mensajeEnviadoCuatro: string = ''
   
   nombreCiudades: Array<nombreCiudadesColombia> = [
     {nombre: 'sincelejo'},
@@ -39,6 +40,11 @@ export class PadreInputOutputComponent implements OnInit {
   paraPadreTres(event: string){
     this.mensajeEnviadoTres = event
     console.log('envio desde el tercer hijo', event)
+  }
+
+  paraPadreCuatro(event: string){
+  this.mensajeEnviadoCuatro = event
+  console.log('envio desde hijo cuatro ', event)
   }
 
 }

@@ -1,0 +1,28 @@
+<div [ngStyle]="{'background-color': 'green'}">
+    <h1>directiva ngModel</h1>
+    <input type="text" [(ngModel)]="directiva_ng_model">
+    <p>{{directiva_ng_model}}</p>
+</div>
+
+<hr>
+
+<div *ngIf="mostrar">
+    <ul>
+        <li *ngFor="let item of directiva_ng_for">
+            {{item.nombre}}
+        </li>
+    </ul>
+</div>
+
+<button (click)="mostrarP()">mostrar usando directiva ngIf</button>
+
+<hr>
+
+<ul [ngSwitch]="superhero">
+    <li *ngSwitchCase="'Groot'">Groot</li>
+    <li *ngSwitchCase="'Ironman'">Ironman</li>
+    <li *ngSwitchCase="'Hulk'">Hulk</li>
+    <li *ngSwitchCase="'Thor'">Thor</li>
+    <li *ngSwitchCase="'Spiderman'">Spiderman</li>
+    <li *ngSwitchDefault>Batman</li>
+  </ul>

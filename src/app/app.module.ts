@@ -18,6 +18,10 @@ import { InputOutputComponent } from './components/input-output/input-output.com
 import { PadreInputOutputComponent } from './components/padre-input-output/padre-input-output.component';
 import { InputOutputDosComponent } from './components/input-output-dos/input-output-dos.component';
 import { InputOutputTresComponent } from './components/input-output-tres/input-output-tres.component';
+import { InputOutputCuatroComponent } from './components/input-output-cuatro/input-output-cuatro.component';
+import { DirectivasComponent } from './components/directivas/directivas.component';
+import { CustomDirectivesComponent } from './components/custom-directives/custom-directives.component';
+import { FormsTemplateComponent } from './components/forms-template/forms-template.component';
 
 
 @NgModule({
@@ -32,7 +36,11 @@ import { InputOutputTresComponent } from './components/input-output-tres/input-o
     InputOutputComponent,
     PadreInputOutputComponent,
     InputOutputDosComponent,
-    InputOutputTresComponent
+    InputOutputTresComponent,
+    InputOutputCuatroComponent,
+    DirectivasComponent,
+    CustomDirectivesComponent,
+    FormsTemplateComponent
   ],
   imports: [
     BrowserModule,
